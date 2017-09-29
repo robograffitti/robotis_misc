@@ -1,0 +1,13 @@
+<launch>
+
+  <!-- image_transport -->
+
+  <!-- color -->
+  <node name="republish_color" type="republish" pkg="image_transport" output="screen"
+        args="compressed in:=/camera/color/image_raw raw out:=/remote/camera/color/image_raw" />
+
+  <!-- depth -->
+  <node name="republish_depth" type="republish" pkg="image_transport" output="screen"
+        args="compressedDepth in:=/camera/depth/image_raw raw out:=/remote/camera/depth/image_raw" />
+
+</launch>
