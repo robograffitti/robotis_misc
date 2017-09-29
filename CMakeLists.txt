@@ -10,9 +10,9 @@ project(robotis_misc)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
-  rtabmap
+  # rtabmap_ros
   std_msgs
-  turtlebot3
+  # turtlebot3
 )
 
 ## System dependencies are found with CMake's conventions
